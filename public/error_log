@@ -1,0 +1,2 @@
+[13-Mar-2021 15:25:08 Asia/Kolkata] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/fglnigwt/public_html/storage/framework/views/da6dd1cb6cdbcdd5ee90f4a8af60e2b9bf8c19db.php on line 53
+[13-Mar-2021 15:25:36 Asia/Kolkata] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/fglnigwt/public_html/storage/framework/views/da6dd1cb6cdbcdd5ee90f4a8af60e2b9bf8c19db.php on line 53

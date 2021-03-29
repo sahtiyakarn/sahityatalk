@@ -1,0 +1,41 @@
+.markbackground1
+ {
+/*     background-color: #00FFFF;*/
+background-image: url("/img/back1.png");
+/*background-repeat: no-repeat;*/
+      -webkit-print-color-adjust: exact;
+ }
+
+
+.Mborder
+{
+    border:2px solid #000;
+    font-size: 20px;
+}
+
+.Mborder1
+{
+    border:1px solid #000;
+    font-size: 20px;
+}
+table {
+    border: solid #000 !important;
+    border-width: 2px 0 0 2px !important;
+}
+th, td {
+    border: solid #000 !important;
+    border-width: 0 2px 2px 0 !important;
+}
+
+@media print {
+    table {
+        border: solid #000 !important;
+        border-width: 2px 0 0 1px !important;
+    }
+    th, td {
+        border: solid #000 !important;
+        border-width: 0 2px 2px 0 !important;
+    }
+}
+
+

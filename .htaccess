@@ -1,0 +1,34 @@
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# <IfModule mod_rewrite.c>
+# RewriteEngine On
+# RewriteRule ^(.*)$ public/$1 [L]
+# </IfModule>
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+
+    # Don't touch anything when coming from test subdomain
+    RewriteCond %{HTTP_HOST} ^admin\. [NC]
+    RewriteRule ^ - [L]
+
+    # Redirect Trailing Slashes...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ /index.php [L]
+</IfModule>
+
+
+Redirect 301 http://thelbstc.co.in/ https://sahityatalk.co.in/

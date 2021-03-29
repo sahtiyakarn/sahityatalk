@@ -1,0 +1,120 @@
+
+
+#header-fixed {           
+z-index: 1;
+}
+
+tr.border_bottom td {
+  border:1px solid black;
+}
+
+tr.border_bottom th {
+  border:1px solid black;
+}
+
+
+.myfont
+{
+  font-family:times new roman;
+}
+
+.mybackground-color
+{
+background-color: #5dccdc;
+color: white;  
+}
+/*table.myborder tbody  tr  td{
+    border:2px solid black;
+}*/
+.header1
+{
+font-size: 50px;
+}
+
+.form-container
+{
+  background:#fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000;
+
+}
+
+.myimg img
+{
+    /* width: 130px;
+    height: 150px; */
+    padding: 6px;
+    filter:grayscale(100%);
+    transform: 1s;
+}
+
+.myimg img:hover
+{
+    filter:grayscale(0);
+    transform: scale(1.1);
+}
+
+
+.fa {
+padding: 5px;
+font-size: 20px;
+width: 35px;
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+/* margin: 5px 2px; */
+}
+
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+@media (min-width: 344px) and (max-width: 550px){
+.header2 {
+        font-size: 1.2rem;
+}
+}
+
+@media (min-width: 344px) and (max-width: 550px){
+.contact1 {
+        font-size: .50rem;
+        margin-top: 0rem!important;
+}
+}
+
+/* home lal bahadur shastri  */
+@media (min-width: 351px) and (max-width: 499px) {
+
+.header1 {
+font-size:15px;
+transform: scale(1.3,2);
+}
+}
+
+.Timming_Details_select_width
+{
+  width: 180px;
+}
+
+.table-wrapper-scroll-y {
+display: block;
+max-height: 550px;
+overflow-y: auto;
+-ms-overflow-style: -ms-autohiding-scrollbar;
+}
