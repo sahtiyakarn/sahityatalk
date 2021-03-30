@@ -38,7 +38,7 @@
         $(function() {
             $("#example1").DataTable({
                 "order": [
-                    [0, "desc"]
+                    [5, "desc"]
                 ],
                 "responsive": true,
                 "lengthChange": true,
@@ -65,13 +65,12 @@
                                     <th>Student_Name</th>
                                     <th>father_hus</th>
                                     <th>Date_of_Admi.</th>
-                                    <th>s</th>
+                                    <th>Creted_at</th>
                                     <th>course</th>
                                     <th>commend</th>
                                     <th>phone</th>
 
                                     <th>FEE</th>
-                                    <th>Atd</th>
                                     <th>Acti</th>
                                     <th>Batch_time</th>
 
@@ -117,7 +116,7 @@
                                         </td>
                                         <td>{{ $item['guardian'] }}</td>
                                         <td>{{ $item['doa'] }}</td>
-                                        <td>{{ $item['setno'] }}</td>
+                                        <td>{{ $item['created_at'] }}</td>
                                         @php
                                             $text = $item['course'];
                                             preg_match('#\((.*?)\)#', $text, $match);
@@ -133,7 +132,6 @@
                                         <td>{{ substr($item['comment'], 0, 9) }}</td>
                                         <td>{{ $item['phone'] }}</td>
                                         <td>{{ $item['fee'] }}</td>
-                                        <td>{{ $item['attendance'] }}</td>
                                         <td>{{ $item['active'] }}</td>
                                         <td>{{ $item['time'] }}</td>
                                         <td> <a href="/admissionedit/{{ $item->id }}" class="btn btn-warning btn-sm"
