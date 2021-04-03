@@ -160,3 +160,4 @@ Route::middleware(['auth:sanctum', 'verified'])->any('/enquiry', [AdminOtherCont
 Route::middleware(['auth:sanctum', 'verified'])->any('/messageus', [AdminOtherController::class, 'messageus']);
 Route::middleware(['auth:sanctum', 'verified'])->any('/thoery_test', [AdminOtherController::class, 'thoery_test']);
 Route::middleware(['auth:sanctum', 'verified'])->any('/thoery_test_update/{id}', [AdminOtherController::class, 'thoery_test_update']);
+Route::middleware(['auth:sanctum', 'verified'])->any('/thoery_test_update_submit', [AdminOtherController::class, 'thoery_test_update_submit']);

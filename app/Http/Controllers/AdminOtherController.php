@@ -167,4 +167,13 @@ class AdminOtherController extends Controller
         $data = Thoery_answer::find($id);
         return view('admin.other.thoery_test_update', compact('data', 'i'));
     }
+
+    function thoery_test_update_submit(Request $request)
+    {
+        return $request->input();
+        return "hello";
+        $i = 1;
+        $data = Thoery_answer::find($id);
+        return view('admin.other.thoery_test_update', compact('data', 'i'));
+    }
 }
